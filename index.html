@@ -22,10 +22,9 @@
         <nav>
           <ul class="menu">
             <li><a href="#">Inicio</a></li>
-            <li><a href="#">Menú</a></li>
             <li><a href="https://menu.fu.do/4-200delivery" target="_blank">Pedidos</a>
             </li>
-            <li><a href="#">Sugerencias</a></li>
+            <li><a href="#contact">Sugerencias</a></li>
           </ul>
         </nav>
       </header>
@@ -74,8 +73,35 @@
       <div class="swiper-slide-button swiper-button-next"></div>
     </div>
    </div>    
-   
-    </div>
+
+    <nav id="hamburger-nav">
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#Inicio" onclick="toggleMenu()">Inicio</a></li>
+          <li><a href="https://menu.fu.do/4-200delivery" target="_blank">Pedidos</a>
+          <li><a href="#contact" onclick="toggleMenu()">Sugerencias</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <section id="contact">
+      <h1 class="title">Contactanos</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./img/email.webp"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">4200delivery@gmail.com</a></p>
+        </div>       
+      </div>
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 

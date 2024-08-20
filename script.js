@@ -29,3 +29,12 @@ const swiper = new Swiper(".slider-wrapper", {
     },
   },
 });
+
+// HAMBURGER MENU
+
+function toggleMenu() {
+  const menu = document.querySelector(".menu-links");
+  const icon = document.querySelector(".hamburger-icon");
+  menu.classList.toggle("open");
+  icon.classList.toggle("open");
+}

@@ -1,10 +1,17 @@
 @media (max-width: 768px) {
+  .slider-wrapper {
+    margin: 0 10px 40px;
+  }
 
-    .slider-wrapper {
-        margin: 0 10px 40px;
-    }
-    
-    .slider-wrapper .swiper-slide-button {
-        display: none;
-    }
+  .slider-wrapper .swiper-slide-button {
+    display: none;
+  }
+
+  .hamburger-icon {
+    display: block;
+  }
+
+  .menu-links {
+    display: none;
+  }
 }
