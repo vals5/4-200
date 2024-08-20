@@ -8,7 +8,10 @@
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/media.css" />
     <link rel="icon" type="image/png" href="/img/Logo.webp" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
 
     <title>4-200 Delivery</title>
   </head>
@@ -20,70 +23,63 @@
           <ul class="menu">
             <li><a href="#">Inicio</a></li>
             <li><a href="#">Menú</a></li>
-            <li>
-              <a href="https://menu.fu.do/4-200delivery" target="_blank"
-                >Pedidos</a
-              >
+            <li><a href="https://menu.fu.do/4-200delivery" target="_blank">Pedidos</a>
             </li>
             <li><a href="#">Sugerencias</a></li>
           </ul>
         </nav>
       </header>
-    </section>
 
-    <div class="tittle">NUESTRO MENÚ</div>
+   <div class="container swiper">
+    <div class="slider-wrapper">
+      <div class="card-list swiper-wrapper">
+        <div class="card-item swiper-slide">
+          <img src="img/Muzza.png" alt="Muzza">
+          <h2 class="name">Muzzarella</h2>
+          <p class="description">Pizza Muzzarella</p>
+      </div>
 
-    <div class="wrapper">
-      <i class="fa-solid fa-angle-left"></i>
-      <ul class="carrousel-1">
-        <li class="card">
-          <div class="img"><img src="/img/Muzza.png" alt="Muzza" /></div>
-          <h2>Muzzarella</h2>
-          <span>Una deliciosa opción clásica. La combinación del queso muzzarella
-            derretido, la salsa de tomate fresca y la masa crujiente es
-            irresistible.</span>
-        </li>
-
-        <li class="card">
-          <div class="img"><img src="/img/Jamon.png" alt="Jamon" /></div>
-          <h2>Especial con jamón</h2>
-          <span>Una deliciosa opción que combina el sabor salado del jamón con la
-            cremosidad del queso y la frescura de la salsa de tomate.</span>
-        </li>
-
-        <li class="card">
-          <div class="img"><img src="/img/Rucula.png" alt="Rucula" /></div>
-          <h2>Crudo y rúcula</h2>
-          <span>Con un toque amargo de la rúcula, salado del jamón y frescura de la salsa de tomate. Deliciosa para quienes buscan una pizza gourmet.</span>
-        </li>
-
-        <li class="card">
-          <div class="img"><img src="/img/4 quesos.png" alt="4 Quesos" /></div>
-          <h2>4 Quesos</h2>
-          <span>Un clásico equilibrio de sabores y texturas, con una rica mezcla de
-            quesos derretidos y cremosos. Una opción perfecta para los amantes
-            del queso.</span>
-        </li>
-
-        <li class="card">
-          <div class="img">
-            <img src="/img/Calabresa.png" alt="Calabresa" />
-          </div>
-          <h2>Calabresa</h2>
-          <span>Un equilibrio perfecto de sabores intensos, con el chorizo
-            calabrese como protagonista. Una opción ideal para aquellos que
-            buscan una pizza con un toque de Italia.</span>
-        </li>
-        <li class="card">
-          <div class="img"><img src="/img/Emp.png" alt="Empanadas" /></div>
-          <h2>Empanadas</h2>
-          <span>Elegí entre carne, jamón y queso, pollo, verdura, choclo, osobuco o
-            queso y cebolla, peso aproximado de cada empanada 90 grs por
-            unidad.</span>
-        </li>
-      </ul>
-      <i class="fa-solid fa-angle-right"></i>
-
+      <div class="card-item swiper-slide">
+        <img src="img/Jamon.png" alt="Jamón">
+        <h2 class="name">Especial con jamón</h2>
+        <p class="description">Pizza Especial</p>
     </div>
+
+    <div class="card-item swiper-slide">
+      <img src="img/Calabresa.png" alt="Calabresa">
+      <h2 class="name">Calabresa</h2>
+      <p class="description">Pizza Calabresa</p>
+  </div>
+
+  <div class="card-item swiper-slide">
+    <img src="img/Rucula.png" alt="Rúcula">
+    <h2 class="name">Rúcula</h2>
+    <p class="description">Pizza Rúcula</p>
+</div>
+
+<div class="card-item swiper-slide">
+  <img src="img/4 quesos.png" alt="4 Quesos">
+  <h2 class="name">4 Quesos</h2>
+  <p class="description">Pizza 4 quesos</p>
+</div>
+
+<div class="card-item swiper-slide">
+  <img src="img/Emp.png" alt="Empanadas">
+  <h2 class="name">Empanadas</h2>
+  <p class="description">Empanadas por docena o 1/2 docena</p>
+</div>
+
+      <div class="swiper-pagination"></div>
+      <div class="swiper-slide-button swiper-button-prev"></div>
+      <div class="swiper-slide-button swiper-button-next"></div>
+    </div>
+   </div>    
+   
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="script.js"></script>
+
   </body>
 </html>

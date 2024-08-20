@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
   --blue: #2f5b8e;
@@ -32,18 +32,18 @@
 
 .menu {
   list-style: none;
-  display: flex;  
+  display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 1.5rem;
   gap: 2rem;
+  margin-right: 20px;
   cursor: pointer;
 }
 
 .hero img {
   height: 100px;
   width: 100px;
-
 }
 
 a {
@@ -61,47 +61,62 @@ a {
 
 /* CARROUSEL */
 
-.wrapper {
-  max-height: 1100px;
-  width: 100%;
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
   background-image: radial-gradient(#feb47b, #f58219);
+}
+
+.slider-wrapper {
+  overflow: hidden;
+  max-width: 1200px;
+  margin: 30px 150px;
+  position: relative;
+}
+
+.card-list .card-item {
+  color: white;
+  user-select: none;
   padding: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background-color: rgba(255,255,255,0.2);
+  border: 2px solid rgba(255,255,255,0.5);
 }
 
-.wrapper .carrousel-1 {
-display: grid;
-grid-auto-flow: column;
-grid-auto-columns: cal((100 / 3) - 12px);
-gap: 16px;
-overflow: hidden;
-}
-
-.carrousel-1 .card {
-height: 342px;
-list-style: none;
-border-radius: 8px;
-padding-top: 80px;
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
-}
-
-.card .img img {
-  width: 140px;
-  height: 140px;
-  object-fit: cover;
+.card-list .card-item img {
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
-  background-color: white;
+  padding: 4px;
 }
 
-.card h2 {
-  font-weight: 400;
-  font-size: 1.56rem;
-  margin: 30px 0 5px;
+.card-list .card-item p {
+font-size: 1.15rem;
+color: white;
+font-weight: 500;
+margin: 14px 0 40px;
 }
 
-.card span {
-  color: grey;
-  font-size: 1.2rem;
+.slider-wrapper .slider-pagination-bullet {
+background: white;
+height: 15px;
+width: 15px;
+transform: translateX(-50%);
 }
+
+.slider-wrapper .swiper-slide-button {
+  color: white;
+  margin-top: -50px;
+  transform: translateY(-50%);
+  transition: 0.2 ease;
+}
+
+.slider-wrapper .swiper-slide-button:hover {
+  color: var(--blue);
+} 
