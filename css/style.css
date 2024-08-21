@@ -14,6 +14,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .title {
   font-size: 1.5rem;
   text-align: center;
@@ -51,10 +55,14 @@
   width: 100px;
 }
 
-a {
+.menu a {
   text-decoration: none;
   transition: 0.3s;
   color: var(--text);
+}
+
+.menu a:hover {
+  color: var(--orange);
 }
 
 .main-text {
@@ -71,7 +79,7 @@ a {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background-image: radial-gradient(#feb47b, #f58219);
+  background-color: #f58219;
 }
 
 .slider-wrapper {
@@ -103,7 +111,7 @@ a {
 
 .card-list .card-item p {
 font-size: 1.15rem;
-color: white;
+color: var(--text);
 font-weight: 500;
 margin: 14px 0 40px;
 }
@@ -242,8 +250,14 @@ transform: translateX(-50%);
   margin: 1rem;
 }
 
-.contact-info-container p {
+.contact-info-container a {
   font-size: larger;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+.contact-info-container a:hover {
+  color: var(--blue);
 }
 
 .contact-icon {
@@ -252,4 +266,35 @@ transform: translateX(-50%);
 
 .email-icon {
   height: 2.5rem;
+}
+
+.social a {
+  text-decoration: none;
+}
+
+.social i {
+  display: flex;
+  color: black;
+  font-size: 40px;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  margin-bottom: 20px;
+  transition: 0.5s;
+}
+.social i:hover {
+  color: var(--blue);
+  transform: rotate(360deg);
+}
+
+/* FOOTER SECTION */
+
+footer {
+  height: 5vh;
+  background-color: var(--blue);
+}
+
+footer p {
+  text-align: center;
+  font-weight: 700;
 }
