@@ -7,11 +7,25 @@
     display: none;
   }
 
+  .menu {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: inline-block;
+  }
+
   .hamburger-icon {
-    display: block;
+    display: block; 
   }
 
   .menu-links {
     display: none;
+  }
+
+  .menu-links.open {
+    display: flex; 
+    flex-direction: column;
+    max-height: 300px;
   }
 }

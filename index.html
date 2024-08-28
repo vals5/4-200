@@ -29,6 +29,23 @@
       </nav>
     </header>
 
+    <nav id="hamburger-nav">
+      <div class="hamburger-menu">
+        <button class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="menu-links">
+          <ul>
+            <li><a href="#Inicio" onclick="toggleMenu()">Inicio</a></li>
+            <li><a href="https://menu.fu.do/4-200delivery" target="_blank">Pedidos</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Sugerencias</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
     <div class="container swiper">
       <div class="slider-wrapper">
         <div class="card-list swiper-wrapper">
@@ -124,22 +141,7 @@
         <div class="swiper-pagination"></div>
         <div class="swiper-slide-button swiper-button-prev"></div>
         <div class="swiper-slide-button swiper-button-next"></div>
-      </div>
-
-      <nav id="hamburger-nav">
-        <div class="hamburger-menu">
-          <div class="hamburger-icon" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <div class="menu-links">
-            <li><a href="#Inicio" onclick="toggleMenu()">Inicio</a></li>
-            <li><a href="https://menu.fu.do/4-200delivery" target="_blank">Pedidos</a>
-            <li><a href="#contact" onclick="toggleMenu()">Sugerencias</a></li>
-          </div>
-        </div>
-      </nav>
+      </div>      
 
       <section id="contact">
         <h1 class="title">Contactanos</h1>
@@ -153,7 +155,7 @@
           <a href="https://www.instagram.com/4200arg/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
         </div>
     </div>
-  </section>
+  </section>  
 
   <footer>
     <p>Copyright &#169; 4-200 Delivery. Todos los derechos reservados 2024.</p>
