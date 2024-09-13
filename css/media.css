@@ -11,6 +11,10 @@
     display: none;
   }
 
+  #hamburger-nav {
+    display: block;
+  }
+
   .hamburger-menu {
     display: inline-block;
   }
@@ -27,5 +31,6 @@
     display: flex; 
     flex-direction: column;
     max-height: 300px;
+    width: 200px;
   }
 }
