@@ -27,24 +27,26 @@
           <li><a href="#contact">Sugerencias</a></li>
         </ul>
       </nav>
+      <!-- todo: investigar sobre accessibility, muuy low priority. Entiendo que no esta tan mal semanticamente pero se podria mejorar -->
+      <nav id="hamburger-nav">
+        <div class="hamburger-menu">
+          <button class="hamburger-icon" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars"></i>
+            <!-- <span></span>
+            <span></span>
+            <span></span> -->
+          </button>
+          <div class="menu-links">
+            <ul>
+              <li><a href="#Inicio" onclick="toggleMenu()">Inicio</a></li>
+              <li><a href="https://menu.fu.do/4-200delivery" target="_blank">Pedidos</a></li>
+              <li><a href="#contact" onclick="toggleMenu()">Sugerencias</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
 
-    <nav id="hamburger-nav">
-      <div class="hamburger-menu">
-        <button class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-        <div class="menu-links">
-          <ul>
-            <li><a href="#Inicio" onclick="toggleMenu()">Inicio</a></li>
-            <li><a href="https://menu.fu.do/4-200delivery" target="_blank">Pedidos</a></li>
-            <li><a href="#contact" onclick="toggleMenu()">Sugerencias</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
 
     <div class="container swiper">
       <div class="slider-wrapper">
