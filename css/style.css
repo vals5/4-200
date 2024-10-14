@@ -41,14 +41,6 @@ html {
   padding-bottom: 0;
 }
 
-.felicidad {
-  text-align: center;
-  font-size: 45px;
-  font-family: "Nerko One";
-  font-weight: 400;
-  color: white;
-}
-
 .menu {
   list-style: none;
   display: flex;
@@ -115,6 +107,7 @@ html {
 .card-list .card-item img {
   width: 250px;
   height: 250px;
+  object-fit: cover;
   border-radius: 50%;
   padding: 4px;
 }
@@ -154,7 +147,8 @@ html {
 /* HAMBURGER MENU */
 
 #hamburger-nav {
-  display: block; 
+  display: none;
+  /* revisar: le puse un width para que pueda verse cuando clickeas el boton */
 }
 
 .hamburger-menu {
@@ -171,6 +165,18 @@ html {
   height: 24px;
   width: 30px;
   cursor: pointer;
+  border: none;
+  background-color: var(--blue);
+}
+
+.hamburger-icon:hover {
+  /* recomendacion: permite que el usuario note que esta por arriba del boton | el color esta medio feo porque es el primero que encontre. buscar uno bueno */
+  background-color: var(--blue);
+}
+
+.hamburger-icon i {
+  color: white;
+  font-size: large;
 }
 
 .hamburger-icon span {
@@ -183,13 +189,14 @@ html {
 }
 
 .menu-links {
-  display: none;
+  /* display: none; */
   position: absolute;
   top: 100%;
-  left: 0;
+  right: 0;
+  left: auto;
   z-index: 1000;
   background-color: var(--blue);
-  width: fit-content;
+  /* width: fit-content; */
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease-in-out;
@@ -197,6 +204,12 @@ html {
 
 .menu-links li {
   list-style: none;
+}
+
+.menu-links li:hover {
+  list-style: none;
+  /* recomendacion: permite que el usuario note que esta por arriba del boton | el color esta medio feo porque es el primero que encontre. buscar uno bueno */
+  background-color: var(--blue);
 }
 
 .menu-links a {
