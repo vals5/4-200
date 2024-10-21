@@ -172,16 +172,28 @@ html {
   cursor: pointer;
   border: none;
   background-color: var(--blue);
+<<<<<<< HEAD
+=======
+
+>>>>>>> c8bee406247d37ca1af2ab3c561ebcae7be35ea9
 }
 
 .hamburger-icon:hover {
   /* recomendacion: permite que el usuario note que esta por arriba del boton | el color esta medio feo porque es el primero que encontre. buscar uno bueno */
+<<<<<<< HEAD
   background-color: var(--blue);
+=======
+  background-color: #112944;
+>>>>>>> c8bee406247d37ca1af2ab3c561ebcae7be35ea9
 }
 
 .hamburger-icon i {
   color: white;
   font-size: large;
+<<<<<<< HEAD
+=======
+  /* transition: all 0.3s ease-in-out; */
+>>>>>>> c8bee406247d37ca1af2ab3c561ebcae7be35ea9
 }
 
 .hamburger-icon span {
@@ -214,9 +226,16 @@ html {
 .menu-links li:hover {
   list-style: none;
   /* recomendacion: permite que el usuario note que esta por arriba del boton | el color esta medio feo porque es el primero que encontre. buscar uno bueno */
+<<<<<<< HEAD
   background-color: var(--blue);
 }
 
+=======
+  background-color: #112944;
+}
+
+
+>>>>>>> c8bee406247d37ca1af2ab3c561ebcae7be35ea9
 .menu-links a {
   display: block;
   padding: 10px;
