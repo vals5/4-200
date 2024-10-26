@@ -60,7 +60,7 @@ html {
 .hero img {
   height: 100px;
   width: 100px;  
-  object-fit: cover;
+  /* object-fit: cover; */
 }
 
 
@@ -106,7 +106,7 @@ html {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-radius: 8px;
+  border-radius: 60px 30px;
   background-color: rgba(255, 255, 255, 0.2);
   border: 2px solid rgba(255, 255, 255, 0.5);
 }
@@ -146,7 +146,6 @@ html {
 
 #hamburger-nav {
   display: none;
-  /* revisar: le puse un width para que pueda verse cuando clickeas el boton */
 }
 
 .hamburger-menu {
@@ -168,13 +167,13 @@ html {
 }
 
 .hamburger-icon:hover {
-  background-color: var(--blue);
   background-color: #112944;
 }
 
 .hamburger-icon i {
   color: white;
-  font-size: large;}
+  font-size: large;
+}
 
 .hamburger-icon span {
   display: block;
@@ -315,5 +314,6 @@ footer {
 
 footer p {
   text-align: center;
+  padding-top: 8px;
   font-weight: 700;
 }
