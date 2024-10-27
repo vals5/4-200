@@ -1,6 +1,10 @@
 @media (max-width: 768px) {
   .slider-wrapper {
+<<<<<<< HEAD
     margin: 30px 20px;
+=======
+    margin: 40px 10px ;
+>>>>>>> 152e5d6f98ce2c23155c3c909ea4dcb36b2acc50
   }
 
   .slider-wrapper .swiper-slide-button {

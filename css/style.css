@@ -142,6 +142,11 @@ html {
   color: var(--blue);
 }
 
+.card-list .card-item .description-empanadas {
+  font-size: 1rem;
+}
+
+
 /* HAMBURGER MENU */
 
 #hamburger-nav {
