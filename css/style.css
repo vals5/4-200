@@ -87,7 +87,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   background-color: #f58219;
 }
 
@@ -141,6 +141,11 @@ html {
 .slider-wrapper .swiper-slide-button:hover {
   color: var(--blue);
 }
+
+.card-list .card-item .description-empanadas {
+  font-size: 1rem;
+}
+
 
 /* HAMBURGER MENU */
 
