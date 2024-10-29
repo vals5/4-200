@@ -245,6 +245,13 @@ html {
   transform: rotate(-45deg) translateY(-9px);
 }
 
+.slogan {
+  font-family: "Caveat", sans-serif;
+  text-align: center;
+  font-size: 1.7rem;
+  color: white;
+}
+
 /* CONTACT */
 
 #contact {
