@@ -63,7 +63,6 @@ html {
   /* object-fit: cover; */
 }
 
-
 .menu a {
   text-decoration: none;
   transition: 0.3s;
@@ -145,7 +144,6 @@ html {
 .card-list .card-item .description-empanadas {
   font-size: 1rem;
 }
-
 
 /* HAMBURGER MENU */
 
@@ -315,6 +313,24 @@ html {
 .social i:hover {
   color: var(--blue);
   transform: rotate(360deg);
+}
+
+/* FLYER */
+
+.flyer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 95%;
+  padding: 1rem;
+}
+
+.flyer img {
+  width: 80%;
+  max-width: 80%;
+  height: auto;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgba(255, 255, 255, 0.5);
 }
 
 /* FOOTER SECTION */

@@ -11,6 +11,14 @@
     display: none;
   }
 
+    .flyer {
+      padding: 0 0.5rem;
+    }
+  
+    .flyer img {
+      max-width: 90%;
+    }
+
   #hamburger-nav {
     display: block;
   }
